@@ -1,0 +1,14 @@
+
+/*Deskop*/
+@media (max-width: 450px) {
+    .logo{
+        max-width: 100px;
+    }
+ }
+ 
+/*Mobile*/
+@media (max-device-width: 375px) {
+    .logo{
+        max-width: 130px;
+    }
+ }
