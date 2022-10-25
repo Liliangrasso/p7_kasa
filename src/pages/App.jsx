@@ -9,7 +9,7 @@ import Error from './404/index'
 
 /* Components */
 import HousingDisplay from '../components/HousingDisplay/index';
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Banner';
 import Footer from '../components/Footer/index'
 
 function App() {
