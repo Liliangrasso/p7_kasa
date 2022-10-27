@@ -2,12 +2,14 @@ import React,{useState,useEffect} from 'react';
 import Card from '../Card/index'
 import styled from 'styled-components'
 
+
 const CardsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 `
-function DataRecovery() {
+
+function DataDisplay() {
   const [data,setData]=useState([]);
   const getData=()=>{
     fetch('data.json'
@@ -22,9 +24,9 @@ function DataRecovery() {
         console.log(response)
         return response.json();
       })
-      .then(function(myJson) {
-        console.log(myJson);
-        setData(myJson)
+      .then(function(cardData) {
+        console.log(cardData);
+        setData(cardData)
       });
   }
   useEffect(()=>{
@@ -32,11 +34,11 @@ function DataRecovery() {
   },[])
   return (
     <CardsContainer>
-      {data.map((myJson) => (
-        <Card key={myJson.id} myJson={myJson}/>
+      {data.map((cardData) => (
+        <Card key={cardData.id} cardData={cardData}/>
       ))}
   </CardsContainer> 
-  );
+  )
 }
 
-export default DataRecovery;
+export default DataDisplay;

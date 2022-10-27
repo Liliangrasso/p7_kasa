@@ -1,6 +1,6 @@
 import React from "react";
 import {Outlet} from "react-router-dom"
-import Data from "../../components/Data/index";
+import Data from "../../components/DataDisplay/index";
 import styled from 'styled-components'
 
 const MainContainer = styled.main`

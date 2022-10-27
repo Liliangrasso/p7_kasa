@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
@@ -13,10 +14,6 @@ const CardWrapper = styled.div`
     margin-top: 15px;
     margin-bottom: 15px;
     position: relative;
-    background-color: #F6F6F6;
-    margin-right: 30px;
-    margin-left: 30px;
-    border-radius: 25px 25px 0px 25px;
     &:hover {
         cursor: pointer;
         box-shadow: 3px 3px 20px #e2e3e9;
@@ -30,7 +27,7 @@ const CardImage = styled.img`
     position: absolute;
 `
 
-const Title = styled.p`
+const CardTitle = styled.p`
         z-index: 1;
         position: absolute;
         top: 280px;
@@ -41,11 +38,11 @@ const Title = styled.p`
         font-size: 18px;
 `
 
-function Card({ myJson }){
+function Card({ cardData }){
     return (
         <CardWrapper>
-            <CardImage src={myJson.cover} alt="Couverture d'annonce" />
-            <Title>{myJson.title}</Title>
+            <CardImage src={cardData.cover} alt="Couverture d'annonce" />
+            <CardTitle>{cardData.title}</CardTitle>
         </CardWrapper>
     )
 }

@@ -1,10 +1,11 @@
 import React from "react";
-
+import Collapse from "../../components/Collapse/index"
 function About(){
     return (
-        <div>
+        <main>
             <h1>About</h1>
-        </div>
+            <Collapse name="about"/>
+        </main>
     )
 }
 
