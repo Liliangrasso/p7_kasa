@@ -37,7 +37,7 @@ const ItemTitle = styled.p`
 `
 const SignTitle = styled.span`
     position: absolute;
-    right: 10%;
+    right: 18%;
     font-size: 25px;
     color: white;
 `

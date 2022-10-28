@@ -6,7 +6,13 @@ import styled from 'styled-components'
 const CardsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap:20px;
+  @media (min-width: 992px){
+    background-color: #F6F6F6;
+    border-radius: 25px 25px 0px 25px;
+    max-width: 75%;
+}
 `
 
 function DataDisplay() {

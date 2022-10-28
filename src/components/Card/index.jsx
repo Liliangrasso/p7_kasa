@@ -11,8 +11,6 @@ const CardWrapper = styled.div`
     height: 350px;
     width: 350px;
     transition: 200ms;
-    margin-top: 15px;
-    margin-bottom: 15px;
     position: relative;
     &:hover {
         cursor: pointer;
