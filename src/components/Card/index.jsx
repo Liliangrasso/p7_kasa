@@ -6,12 +6,12 @@ import colors from '../../utils/style/colors'
 const CardWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: ${colors.backgroundLight};
     border-radius: 10px;
-    height: 350px;
-    width: 350px;
+    min-height: 450px;
+    min-width: 450px;
     transition: 200ms;
     position: relative;
+    background-color: ${colors.backgroundLight};
     &:hover {
         cursor: pointer;
         box-shadow: 3px 3px 20px #e2e3e9;

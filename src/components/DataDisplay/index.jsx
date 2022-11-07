@@ -2,16 +2,14 @@ import React,{useState,useEffect} from 'react';
 import Card from '../Card/index'
 import styled from 'styled-components'
 
-
 const CardsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap:20px;
+  gap:30px;
   @media (min-width: 992px){
     background-color: #F6F6F6;
     border-radius: 25px 25px 0px 25px;
-    max-width: 75%;
 }
 `
 
@@ -43,7 +41,7 @@ function DataDisplay() {
       {data.map((cardData) => (
         <Card key={cardData.id} cardData={cardData}/>
       ))}
-  </CardsContainer> 
+    </CardsContainer> 
   )
 }
 
