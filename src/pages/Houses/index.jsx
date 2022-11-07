@@ -32,8 +32,8 @@ const Title = styled.div`
 function Houses(){
     const { id } = useParams();
     const getHouses = data.find((object) => object.id === id)
-    const slidePictures = getId.pictures;
-    const tags = getId.tags;
+    const slidePictures = getHouses.pictures;
+    const tags = getHouses.tags;
 
     return (
         <HouseContainer  key={ id }>
